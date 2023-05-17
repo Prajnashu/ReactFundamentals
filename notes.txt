@@ -1,0 +1,6 @@
+Vanilla JS can be used to query for an element and do something as per the user response.
+webpage divided into small reusable components and react will take care of creating and updating DOM elements.
+
+Components help us write reusable, modular and better organized code.
+
+Essentially a react application is a tree of components with App as the root bringing everything together.
