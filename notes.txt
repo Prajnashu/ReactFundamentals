@@ -4,3 +4,27 @@ webpage divided into small reusable components and react will take care of creat
 Components help us write reusable, modular and better organized code.
 
 Essentially a react application is a tree of components with App as the root bringing everything together.
+
+Another benefit of JSX: we can use braces inside which there can be JS expressions that produces a value.
+
+When the application starts, React takes the Components tree and creates a virtual DOM. The virtual DOM is lightweight, in memory data structure that has the components and properties as it's node.
+
+When a state/data of a component changes, React updates the corresponding node in the virtual DOM. Then it compares the current version of virtual DOM with previous version to find the nodes that have changed. Then it updates the nodes. React-dom(Companion Library) updates the DOM.
+
+Library vs framework: 
+Library is a tool that provides specific functionality while a framework provides a set of tools and guidelines for building applications.
+
+In react, a component can't return more than one element. Can use Fragment to return multiple elements.
+
+Hook is a function that allows us to tap into builtin functions in react.
+
+useState
+Each component has it's ows state. So they are independent of each other.
+
+props are the input to the component like argument to function.
+In contrast, state is the data managed by the component It is similar to local variables.
+
+Props are immutable in react. It is against react principles.
+In contrast, states are mutable and they need to be mutable for their purpose. It tells react that this component has data that changes overtime.
+
+The similarity between them is that any time they change, react will re-render the componenet and update the DOM.
